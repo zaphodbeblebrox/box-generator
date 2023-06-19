@@ -5,7 +5,8 @@ import Boxes from './components/boxes';
 import { useState } from 'react';
 
 function App() {
-  const [boxes, setBoxes] = useState(["red"])
+  // const [boxes, setBoxes] = useState(["red"])
+  const [boxes, setBoxes] = useState([{color:"red", size: "100px"}])
 
   return (
     <div className="App">

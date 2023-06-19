@@ -8,7 +8,9 @@ const Boxes = ({boxes}) => {
         <div className="boxes-container">
             {boxes.map((box, idx) => {
                 return(
-                    <div className="box" style={{backgroundColor: box}} key={idx}></div>
+                    <div className="box" 
+                        style={{backgroundColor: box.color, width: box.size, height: box.size}} 
+                        key={idx}></div>
                 );
             })}
         </div>
